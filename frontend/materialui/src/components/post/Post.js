@@ -9,15 +9,18 @@ import useStyles from './Style.js';
 
 export default function Post(props) {
   const classes = useStyles();
-  console.log(props);
+  let path = props.path;
+  let stringToRecognise = "../public";
+  path = path.substring(path.indexOf(stringToRecognise)+stringToRecognise.length);
+  path = "http://localhost:3001"+path+"/"+props.name;
   return(
       <Card className={classes.card}>
-        {/*<a download target="_blank" href={"http://localhost:3001/"+props.name}>*/}
+        <a target="_blank" href={path}>
           <CardActionArea>
             <Icon color="black" size={2.5} path={mdiFileDocumentOutline} />
             {props.name}
           </CardActionArea>
-        {/*</a>*/}
+        </a>
         <CardActions>
           <Button
           size="medium"
@@ -43,7 +46,7 @@ export default function Post(props) {
           onClick = {() => {
               props.history.push('/')
           }}>
-            Go to main page
+            Go Back
           </Button>
         </CardActions>
       </Card>

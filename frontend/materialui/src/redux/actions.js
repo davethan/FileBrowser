@@ -74,8 +74,9 @@ export function downloadFile(path, name) {
       req.open("POST", "http://localhost:3001/download");
       req.send(formData);
       req.onload = () => {
-        let resp = JSON.parse(req.response);
-        console.log(resp);
+      //   let resp = JSON.parse(req.response);
+      //   console.log(resp);
+          console.log(req.response);
       }
     });
   };
