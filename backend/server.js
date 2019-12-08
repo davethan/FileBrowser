@@ -19,7 +19,7 @@ app.post('/updateDirectory', require('./routes/updateDirectory'));
 app.post('/upload', require('./routes/upload'));
 app.post('/remove', require('./routes/remove'));
 app.post('/download', require('./routes/download'));
-app.use(serve(__dirname+'/public'));
+app.use(serve(__dirname + '/public'));
 
 // Default response for any other request
 app.use(function(req, res){

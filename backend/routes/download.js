@@ -10,7 +10,7 @@ module.exports = function download(req, res) {
       throw err;
     }
 
-    //send the file via download()
+    // send the file via download()
     let path = fields.path+"/"+fields.name;
     res.download(path);
 

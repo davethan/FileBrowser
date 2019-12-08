@@ -26,7 +26,6 @@ HideOnScroll.propTypes = {
 };
 
 export default function HideAppBar(props) {
-  // console.log(props)
   const classes = useStyles();
   const handleClick = () => {
     let path = props.path;
