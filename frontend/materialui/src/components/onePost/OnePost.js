@@ -23,8 +23,8 @@ export default function OnePost(props) {
   }
   else{
     return (
-        <Card className={classes.card}>
-          <Icon onClick={handleClick} color="black" size={2.5} path={mdiFolderOutline} />
+        <Card  onClick={handleClick} className={classes.card}>
+          <Icon color="black" size={2.5} path={mdiFolderOutline} />
           {props.name}
         </Card>
     );
