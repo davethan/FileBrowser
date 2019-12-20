@@ -1,6 +1,6 @@
 # FileBrowser
 ### How it was built
-The FileBrowser was created with node.js and react.js.
+The FileBrowser was created with node.js and react.js in a weekend.
 
 ### How to run
 - Download the files
